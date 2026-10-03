@@ -7,8 +7,9 @@
  * 1. Remplace les valeurs de configuration ci-dessous.
  * 2. Génère un hash de mot de passe admin avec :
  *    php -r "echo password_hash('TON_MOT_DE_PASSE', PASSWORD_DEFAULT);"
+ *    ou sur https://bcrypt.online
  * 3. Génère un secret cookie aléatoire (ex. : openssl rand -base64 32)
- * 4. Place ce fichier derrière un reverse-proxy HTTPS de préférence.
+ *    commande macos openssl rand -hex 32
  */
 
 ini_set('display_errors', 1);
